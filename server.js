@@ -46,6 +46,11 @@ app.get('/about',(req,res)=>{
   });
 });
 
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs',{
+    pageInformation:'Projects Page'
+  });
+});
 app.get('/bad',(req,res)=>{
   res.send({
     error:'This is a error page'
